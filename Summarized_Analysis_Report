@@ -1,0 +1,46 @@
+---Below is a summarized analysis report of the SQL queries:
+
+--1. **Detailed Shipping Information for Shipped Orders:**
+   -- Identified orders with detailed shipping information where the status is 'Shipped'.
+   -- Combined data from the `Product_Sales_Report` and `Shipping_Details` tables.
+
+--2. **Top 3 Categories with Highest Average Order Amounts:**
+   -- Calculated the average order amount for each category.
+   -- Presented the top 3 categories with the highest average order amounts.
+
+--3. **Total Sales Amount by Fulfillment Method:**
+   -- Found the total sales amount for orders with the status 'Shipped' or 'Shipped - Delivered to Buyer'.
+   -- Grouped the results by the fulfillment method.
+
+--4. **Average Order Amount by Size Category (Qty > 1):**
+   -- Calculated the average order amount for each size category.
+   -- Considered only orders with a quantity greater than 1.
+
+--5. **Orders Shipped by 'Easy Ship' to Karnataka:**
+   -- Identified orders shipped by 'Easy Ship' to Karnataka.
+   -- Also, found the total number of orders shipped by 'Easy Ship' for different states.
+
+--6. **Top 5 Categories with Highest Total Sales Amounts:**
+   -- Determined the top 5 categories with the highest total sales amounts.
+
+--7. **Average Order Amount for Orders Fulfilled by 'Easy Ship':**
+   -- Calculated the average order amount for orders fulfilled by 'Easy Ship'.
+   -- Provided results both using a simple query and a sub-query.
+
+--8. **Data Modification - Update 'Courier_Status' Column:**
+   -- Updated the 'Courier_Status' column in the 'Shipping_Details' table to 'Delivered' for orders with a courier status of 'Shipped'.
+
+--9. **Data Modification - Delete and Rollback:**
+   -- Attempted to delete rows from the 'Shipping_Details' table for orders shipped to Tamil Nadu.
+   -- Rolled back the transaction to undo the deletion.
+
+--10. **Percentage of Cancelled Orders:**
+    -- Calculated the percentage of cancelled orders from the `Product_Sales_Report` table.
+
+--11. **Top 5 Customers by Total Amount Spent:**
+    -- Identified the top 5 customers based on the total amount spent.
+    -- Joined the `Product_Sales_Report` and `Shipping_Details` tables.
+
+--12. **Month-over-Month Growth in Sales for Each Category:**
+    -- Calculated the month-over-month growth in sales for each category.
+    -- Used the `LAG` function to compare current month sales with the previous month.
